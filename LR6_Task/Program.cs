@@ -1,4 +1,5 @@
 ﻿using System;
+//коментар для репозиторію
 class StudZ //студент, що складає залік
 {
     private bool[] results; //результат здачі заліку
@@ -131,7 +132,7 @@ class Program
             int grade1 = random.Next(2, 6);
             int grade2 = random.Next(2, 6);
             int grade3 = random.Next(2, 6);           
-            Console.WriteLine($"Оцінки: {grade1}, {grade2}, {grade3}");
+            Console.WriteLine($"Оцiнки: {grade1}, {grade2}, {grade3}");
 
             //об'єкт класу StudE
             StudE studentE = new StudE(grade1, grade2, grade3);
@@ -145,6 +146,7 @@ class Program
 
             //до об'єкта класу Exam застосовується метод, який генерує подiю Event3 або подiю Event4
             exam.ProcessResults();
+
         }
     }
 }
